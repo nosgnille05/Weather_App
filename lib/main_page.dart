@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:weather/screens/home_screen.dart';
-import 'package:weather/screens/search_screen.dart';
+import 'package:weather_app/screens/home_screen.dart';
+import 'package:weather_app/screens/search_screen.dart';
 
 //* Bottom Navigation manager
 class MainPage extends StatefulWidget {
