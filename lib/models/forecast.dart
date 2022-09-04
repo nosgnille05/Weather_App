@@ -190,7 +190,7 @@ class MainClass {
   double tempKf;
 
   factory MainClass.fromJson(Map<String, dynamic> json) => MainClass(
-        temp: json["temp"].toDouble(),
+        temp: toFahrenheit(json["temp"].toDouble()),
         feelsLike: json["feels_like"].toDouble(),
         tempMin: json["temp_min"].toDouble(),
         tempMax: json["temp_max"].toDouble(),
@@ -212,6 +212,10 @@ class MainClass {
         "humidity": humidity,
         "temp_kf": tempKf,
       };
+}
+
+toFahrenheit(double celsius) {
+  return celsius * 1.8 + 32;
 }
 
 class Sys {
