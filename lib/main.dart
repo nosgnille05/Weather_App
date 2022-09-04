@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:theme_provider/theme_provider.dart';
-import 'package:weather/main_page.dart';
+import 'package:weather_app/main_page.dart';
 
 void main() {
   runApp(const MyApp());
